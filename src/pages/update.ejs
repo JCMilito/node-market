@@ -7,8 +7,8 @@
     <input type="hidden" name="id" value="<%= product.id %>">
     <input type="text" placeholder="Nome" name="name" value="<%= product.name %>" required> <br>
     <input type="text" placeholder="Valor" name="price" value="<%= (product.price.toFixed(2)).
-    replace('.',',') %>" pattern="\d+(,\d{2})?"> <br><br>
-    <input type="submit" value="Editar">
+    replace('.',',') %>" pattern="\d+(,\d{2})?" required> <br><br>
+    <input type="submit" value="Atualizar">
 </form>
 
 <div class="margin"></div>  
