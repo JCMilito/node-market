@@ -1,0 +1,32 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<div class="margin"></div>    
+
+<a href="http://localhost:3000/create">Novo Produto</a>
+
+<table>
+    <% for (var i=0; i < products.length; i++) { 
+        var product = products[i] %>
+        <tr>
+            <td class="name-column">
+                <%= product.name %>
+            </td>
+            <td>
+                <%= 'R$ ' + (product.price.toFixed(2)).replace('.',',') %>
+            </td>
+            <td>
+                <form action="/update" method="get">
+                    <input type="hidden" name="product" value="<%= (JSON.stringify(product)) %>">
+                    <input type="submit" value="Atualizar">
+                </form>
+            </td>
+            <td>
+                <form action="/products/delete" onSubmit="return confirm('Confirma Exclusão ?')" 
+                    method="post">
+                    <input type="hidden" name="product" value="<%= (JSON.stringify(product)) %>">
+                    <input type="submit" value="Excluir">
+                </form>
+            </td>
+        </tr>
+        <% } %>
+</table>

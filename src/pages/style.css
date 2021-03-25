@@ -1,0 +1,57 @@
+.margin {    
+    height: 1em;
+}
+
+table {
+    font-family: arial, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    padding: 20px;
+    table-layout: fixed;
+}
+
+.name-column {
+    width: 55%;
+}
+  
+td {
+    width: 15%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding-left: 16px;
+}
+
+form {
+    margin-bottom: 0;
+}
+  
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+input[type=submit] {
+    background-color: darkblue;
+    padding: 12px 40px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+a {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 1px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    border-radius: 12px;
+  }
+
