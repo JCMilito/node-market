@@ -1,5 +1,5 @@
 import express from 'express';
-import DAO from './DAO';
+import DAO from './dao';
 import { Product } from './model/Product';
 
 const router = express.Router();
