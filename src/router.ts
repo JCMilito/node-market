@@ -37,4 +37,4 @@ router.post('/products/delete', function (req: Request, res: Response) {
   res.redirect('/');
 });
 
-export { router };
+export default router;
