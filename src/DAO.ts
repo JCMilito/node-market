@@ -1,6 +1,6 @@
 import lowdb from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
-import { sortByName } from './Util';
+import { sortByName } from './util';
 import { nanoid } from 'nanoid';
 import { Product } from './model/Product';
 
