@@ -4,7 +4,7 @@ import { sortByName } from './Util';
 import { nanoid } from 'nanoid';
 import { Product } from './model/Product';
 
-export class DAO {
+export default class DAO {
 
     db = lowdb(new FileSync('db.json'));
 
@@ -22,8 +22,8 @@ export class DAO {
     }    
 
     createProduct(data: any): void {
-        // @ts-ignore
-        this.db.get('products').push(new Product(nanoid(), data.name, data.price)).write();
+        // @ts-ignore        
+        this.db.get('products').push(new Product(nanoid(), data.name, data.price)).write();        
     }
 
     updateProduct(product: Product): void {
