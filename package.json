@@ -1,13 +1,10 @@
 {
   "name": "node-market",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "ts-node-dev src/server.ts"
   },
-  "keywords": [],
-  "author": "",
+  "author": "José Carlos Milito",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.11",
