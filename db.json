@@ -1,3 +1,19 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "P8tJj4w8a0Sgpe5ABOVh2",
+      "name": "Coca Cola 2l",
+      "price": 6.6
+    },
+    {
+      "id": "piIf55hqJ8VG3YnDyEKW3",
+      "name": "Coca Cola 3l",
+      "price": 8.8
+    },
+    {
+      "id": "PjImCOldcRZ2Rv2I2GlWk",
+      "name": "Sprite 2l",
+      "price": 7.7
+    }
+  ]
 }

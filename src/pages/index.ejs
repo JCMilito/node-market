@@ -4,6 +4,16 @@
 
 <a href="http://localhost:3000/create">Novo Produto</a>
 
+<form action="/" method="get" class="search">
+    <input type="text" name="search" placeholder="Buscar Produto" required>
+    <input type="submit" hidden>
+</form>
+
+<form action="/products/price-change" onSubmit="return confirm('Confirma Remarcação ?')" method="post">
+    <input type="text" placeholder="Remarcação de Preços (%)" name="percentage" pattern="(-)?\d{1,}" required> 
+    <input type="submit" hidden>
+</form>
+
 <table>
     <% for (var i=0; i < products.length; i++) { 
         var product = products[i] %>
