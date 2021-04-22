@@ -7,7 +7,7 @@ const dao: DAO = new DAO();
 
 router.get('/', function(req: Request, res: Response) {
   let products: Product[] = dao.listProducts(); 
-  if (req.query.search == undefined) {
+  if (req.query.search == undefined || req.query.search == '') {
     res.render(__dirname + '/pages/index.ejs', { products });  
   } else {
     let query: string = String(req.query.search).toLowerCase();
