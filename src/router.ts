@@ -1,9 +1,8 @@
 import express, { Request, Response } from 'express';
-import DAO from './dao';
+import dao from './dao';
 import { Product } from './model/Product';
 
 const router = express.Router();
-const dao: DAO = new DAO();
 
 router.get('/', function(req: Request, res: Response) {
   let products: Product[] = dao.listProducts(); 

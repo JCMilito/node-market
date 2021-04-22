@@ -3,7 +3,8 @@ import FileSync from "lowdb/adapters/FileSync";
 import { nanoid } from "nanoid";
 import { Product } from "./model/Product";
 
-export default class DAO {
+class DAO {
+  
   db = lowdb(new FileSync("db.json"));
 
   constructor() {
@@ -43,3 +44,6 @@ function sortByName(products: Product[]): Product[] {
     a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1
   );
 }
+
+let dao: DAO = new DAO();
+export default dao;
