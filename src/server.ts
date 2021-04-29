@@ -10,4 +10,5 @@ app.use(router);
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/pages'));
 
+var port = process.env.PORT || 3000;
 app.listen(3000);
